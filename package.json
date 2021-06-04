@@ -1,0 +1,46 @@
+{
+  "name": "inline-html-indent",
+  "author": "https://github.com/vulkd",
+  "publisher": "vulkd",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vulkd/vscode-inline-html-indent.git"
+  },
+  "displayName": "Inline HTML Indent",
+  "description": "Indents inline HTML",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.56.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:inline-html-indent.htmlInlineIndent"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "inline-html-indent.htmlInlineIndent",
+        "title": "HTML Inline Indent"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.56.0",
+    "eslint": "^7.19.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
+  }
+}
